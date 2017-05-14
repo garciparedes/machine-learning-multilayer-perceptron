@@ -1,0 +1,279 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 5000 -V 0 -S 0 -E 20 -H 10
+Relation:     wine-train
+Instances:    119
+Attributes:   14
+              Alcohol
+              Malic acid
+              Ash
+              Alcalinity of ash
+              Magnesium
+              Total phenols
+              Flavanoids
+              Nonflavanoid phenols
+              Proanthocyanins
+              Color intensity
+              Hue
+              OD280/OD315 of diluted wines
+              Proline
+              CLASS
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.010551612071288982
+    Node 1    -0.6382582667488931
+    Node 2    0.6476244361896274
+    Node 3    0.48712683834859666
+    Node 4    -0.1337580092738106
+    Node 5    -0.7621037942770479
+    Node 6    -1.3288443126435059
+    Node 7    0.5184946516786736
+    Node 8    -0.4484000813515252
+    Node 9    1.4064371721564295
+    Node 10    0.3658849473338833
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.1401741058357215
+    Attrib Alcohol    0.7023404360043545
+    Attrib Malic acid    0.7402507771473736
+    Attrib Ash    0.4267782362099786
+    Attrib Alcalinity of ash    0.18817341063455975
+    Attrib Magnesium    0.16261605869718812
+    Attrib Total phenols    -0.43745927568656645
+    Attrib Flavanoids    -0.9560866028081431
+    Attrib Nonflavanoid phenols    0.7812257046830555
+    Attrib Proanthocyanins    -1.1046842355565907
+    Attrib Color intensity    1.3913383144778217
+    Attrib Hue    -1.4278953126674243
+    Attrib OD280/OD315 of diluted wines    -0.6698625727968516
+    Attrib Proline    1.291103682276945
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.9985758870931376
+    Attrib Alcohol    -0.02055214672059356
+    Attrib Malic acid    -0.15575772734970122
+    Attrib Ash    0.050345923124130824
+    Attrib Alcalinity of ash    0.16382669211572173
+    Attrib Magnesium    0.5217839914666906
+    Attrib Total phenols    0.0020369950822568443
+    Attrib Flavanoids    0.1798642684106656
+    Attrib Nonflavanoid phenols    0.07026140376097641
+    Attrib Proanthocyanins    0.31654472609761974
+    Attrib Color intensity    0.4775306074737655
+    Attrib Hue    0.07671814061712538
+    Attrib OD280/OD315 of diluted wines    -0.5890726136059369
+    Attrib Proline    0.19049523064285553
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.13192045514154407
+    Attrib Alcohol    2.099131754175411
+    Attrib Malic acid    0.2692876552300923
+    Attrib Ash    0.5514259446863855
+    Attrib Alcalinity of ash    -0.6821239640552113
+    Attrib Magnesium    0.35536292600677505
+    Attrib Total phenols    0.7024288247299165
+    Attrib Flavanoids    0.4999490763699293
+    Attrib Nonflavanoid phenols    -0.6411723165160162
+    Attrib Proanthocyanins    -0.018027791379490465
+    Attrib Color intensity    -0.576681366982773
+    Attrib Hue    -0.2917752696172266
+    Attrib OD280/OD315 of diluted wines    0.7745436524292542
+    Attrib Proline    2.4043801736201456
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.2585778994569459
+    Attrib Alcohol    -0.16696886677237266
+    Attrib Malic acid    0.2581938385485236
+    Attrib Ash    0.3592850500296235
+    Attrib Alcalinity of ash    0.23040600860580898
+    Attrib Magnesium    0.48068073175577847
+    Attrib Total phenols    -0.13270226441486122
+    Attrib Flavanoids    -0.1384497578437775
+    Attrib Nonflavanoid phenols    -0.1940975831529545
+    Attrib Proanthocyanins    0.08213959352837902
+    Attrib Color intensity    0.413310557697921
+    Attrib Hue    0.07482207341062455
+    Attrib OD280/OD315 of diluted wines    0.0245760261817691
+    Attrib Proline    0.3651829013833583
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.0190372266977241
+    Attrib Alcohol    -0.09740175749448222
+    Attrib Malic acid    0.0857877853952045
+    Attrib Ash    0.5608908733308394
+    Attrib Alcalinity of ash    0.7684322396986895
+    Attrib Magnesium    0.643176649935258
+    Attrib Total phenols    -0.07456147162456844
+    Attrib Flavanoids    -0.5068392920206459
+    Attrib Nonflavanoid phenols    -0.5237879809694682
+    Attrib Proanthocyanins    0.3323934005203827
+    Attrib Color intensity    0.5061730451538208
+    Attrib Hue    0.13764045265464037
+    Attrib OD280/OD315 of diluted wines    0.19584918299535303
+    Attrib Proline    0.24934674676576624
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.8899533226645931
+    Attrib Alcohol    4.07624899904704
+    Attrib Malic acid    1.0830146838908532
+    Attrib Ash    2.8155457511287394
+    Attrib Alcalinity of ash    -3.8947252586858445
+    Attrib Magnesium    1.5881039177326297
+    Attrib Total phenols    -0.33973944101409115
+    Attrib Flavanoids    3.13417628213724
+    Attrib Nonflavanoid phenols    -0.23174653359310088
+    Attrib Proanthocyanins    -2.5352053251246156
+    Attrib Color intensity    -1.1799860565325357
+    Attrib Hue    -0.926946802326512
+    Attrib OD280/OD315 of diluted wines    3.236172041622912
+    Attrib Proline    5.113558771758336
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.3047441912637214
+    Attrib Alcohol    -0.2997408123081445
+    Attrib Malic acid    0.7342670874165386
+    Attrib Ash    1.4907492081689908
+    Attrib Alcalinity of ash    0.07101151646689852
+    Attrib Magnesium    -0.17109020496645214
+    Attrib Total phenols    -1.0690294291779612
+    Attrib Flavanoids    -0.22867786630577688
+    Attrib Nonflavanoid phenols    0.11219578147540597
+    Attrib Proanthocyanins    -0.48530557374375705
+    Attrib Color intensity    0.732306227532046
+    Attrib Hue    -0.2776905382783331
+    Attrib OD280/OD315 of diluted wines    0.6422234665698058
+    Attrib Proline    0.7682308943295025
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.7517489733319916
+    Attrib Alcohol    0.2178476063032613
+    Attrib Malic acid    -0.07897693842087651
+    Attrib Ash    0.2787505504432204
+    Attrib Alcalinity of ash    -0.756757455586425
+    Attrib Magnesium    -0.0727749053817626
+    Attrib Total phenols    0.24722331257120583
+    Attrib Flavanoids    0.5414837036444867
+    Attrib Nonflavanoid phenols    -0.005999611985485921
+    Attrib Proanthocyanins    0.2651680693250218
+    Attrib Color intensity    0.23091031568576406
+    Attrib Hue    0.10137652281116352
+    Attrib OD280/OD315 of diluted wines    -0.13578324164251998
+    Attrib Proline    0.4566974426064532
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -2.1811368610856374
+    Attrib Alcohol    1.99615589056487
+    Attrib Malic acid    0.5543646062839451
+    Attrib Ash    1.8707245233311482
+    Attrib Alcalinity of ash    -0.05707480722210671
+    Attrib Magnesium    1.8700224364518934
+    Attrib Total phenols    1.3263418359177828
+    Attrib Flavanoids    -4.567696743786532
+    Attrib Nonflavanoid phenols    0.34542770268689565
+    Attrib Proanthocyanins    -1.4660520242856878
+    Attrib Color intensity    3.924398523407863
+    Attrib Hue    -3.9303322967782126
+    Attrib OD280/OD315 of diluted wines    -2.7234960750420134
+    Attrib Proline    0.5226388565076343
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.1428961569921274
+    Attrib Alcohol    -0.057525644034047946
+    Attrib Malic acid    0.15441815098041872
+    Attrib Ash    0.1347107444887784
+    Attrib Alcalinity of ash    -0.05952020925996554
+    Attrib Magnesium    0.4372097371143199
+    Attrib Total phenols    0.20100599005568634
+    Attrib Flavanoids    0.08065291469195301
+    Attrib Nonflavanoid phenols    -0.19261180358742666
+    Attrib Proanthocyanins    0.16088411576652992
+    Attrib Color intensity    0.5238668079203627
+    Attrib Hue    0.19488092543073313
+    Attrib OD280/OD315 of diluted wines    0.1842158661615818
+    Attrib Proline    0.4317526619323313
+Class
+    Input
+    Node 0
+
+
+Time taken to build model: 2.53 seconds
+
+=== Predictions on test set ===
+
+inst#,actual,predicted,error
+1,2,1.996,-0.004
+2,3,2.808,-0.192
+3,2,2.06,0.06
+4,2,1.989,-0.011
+5,3,3.042,0.042
+6,2,2.01,0.01
+7,2,1.984,-0.016
+8,2,1.976,-0.024
+9,1,1.032,0.032
+10,1,0.974,-0.026
+11,1,1.01,0.01
+12,1,1.007,0.007
+13,1,0.992,-0.008
+14,2,1.938,-0.062
+15,2,1.968,-0.032
+16,1,1,-0
+17,2,2.017,0.017
+18,2,1.985,-0.015
+19,2,1.996,-0.004
+20,2,2.338,0.338
+21,1,1.001,0.001
+22,3,3.024,0.024
+23,3,2.991,-0.009
+24,1,1.005,0.005
+25,1,0.977,-0.023
+26,2,1.995,-0.005
+27,3,3.021,0.021
+28,1,1.009,0.009
+29,2,1.841,-0.159
+30,2,1.967,-0.033
+31,2,2.005,0.005
+32,1,1.009,0.009
+33,1,1.004,0.004
+34,3,3.037,0.037
+35,2,2.017,0.017
+36,3,3.003,0.003
+37,1,1.02,0.02
+38,3,2.972,-0.028
+39,3,3.019,0.019
+40,2,1.907,-0.093
+41,2,1.479,-0.521
+42,1,1.006,0.006
+43,1,1.005,0.005
+44,3,2.858,-0.142
+45,2,2.006,0.006
+46,2,2.012,0.012
+47,2,1.998,-0.002
+48,2,1.924,-0.076
+49,2,1.995,-0.005
+50,2,1.994,-0.006
+51,2,1.97,-0.03
+52,1,1.029,0.029
+53,2,1.998,-0.002
+54,3,3.031,0.031
+55,2,1.986,-0.014
+56,3,3.093,0.093
+57,2,1.49,-0.51
+58,1,1.017,0.017
+59,2,1.934,-0.066
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.9869
+Mean absolute error                      0.0509
+Root mean squared error                  0.1149
+Relative absolute error                  9.9299 %
+Root relative squared error             16.4859 %
+Total Number of Instances               59
