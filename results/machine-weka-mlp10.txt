@@ -1,0 +1,224 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 5000 -V 0 -S 0 -E 20 -H 10
+Relation:     machine-train
+Instances:    139
+Attributes:   8
+              MYCT
+              MMIN
+              MMAX
+              CACH
+              CHMIN
+              CHMAX
+              PRP
+              ERP
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    0.504210376045096
+    Node 1    0.7207900614810848
+    Node 2    -0.01742940929979858
+    Node 3    0.13292535787850832
+    Node 4    0.13545991421131914
+    Node 5    -0.2737633816229346
+    Node 6    -0.027578088474248866
+    Node 7    0.0163354576969352
+    Node 8    0.19301386843049836
+    Node 9    0.3045146797862265
+    Node 10    -1.4664858981149067
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.819573265523937
+    Attrib MYCT    0.5842466597173911
+    Attrib MMIN    0.6200717077061574
+    Attrib MMAX    0.9191651688280273
+    Attrib CACH    0.5637189604959958
+    Attrib CHMIN    0.151069355213639
+    Attrib CHMAX    -6.047870283735385E-4
+    Attrib PRP    0.3172253666120315
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.400364912903308
+    Attrib MYCT    0.34349462483421717
+    Attrib MMIN    -0.038860563041380136
+    Attrib MMAX    0.029673607886409152
+    Attrib CACH    0.08550875429389732
+    Attrib CHMIN    0.1468929120167385
+    Attrib CHMAX    0.30337488617191843
+    Attrib PRP    0.24993822512520655
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.42364751227819375
+    Attrib MYCT    0.26304081424270126
+    Attrib MMIN    0.3470752122370914
+    Attrib MMAX    0.20372263957619988
+    Attrib CACH    0.20434728245088643
+    Attrib CHMIN    0.2241613883063754
+    Attrib CHMAX    0.08903011046152988
+    Attrib PRP    0.15124161481429638
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.41805477178279676
+    Attrib MYCT    0.2769471718859211
+    Attrib MMIN    0.2983436875570658
+    Attrib MMAX    0.1085560085062963
+    Attrib CACH    0.22098260230525044
+    Attrib CHMIN    0.20407734459474197
+    Attrib CHMAX    0.09246835063246492
+    Attrib PRP    0.14975163322594734
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.0891163947728609
+    Attrib MYCT    0.5396524403818248
+    Attrib MMIN    -0.2973606025589455
+    Attrib MMAX    -0.3895947800272677
+    Attrib CACH    -0.2880229626007547
+    Attrib CHMIN    -0.2648505000436852
+    Attrib CHMAX    0.07806648050791591
+    Attrib PRP    -0.08148177489861588
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.34664785819391236
+    Attrib MYCT    0.3178431004981837
+    Attrib MMIN    -0.09731464016005784
+    Attrib MMAX    0.06781152017848009
+    Attrib CACH    0.061654555442223896
+    Attrib CHMIN    0.08062465698722981
+    Attrib CHMAX    0.2973198154064157
+    Attrib PRP    0.25627189576737835
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.373271979839308
+    Attrib MYCT    0.3917365669943001
+    Attrib MMIN    0.09686069520276676
+    Attrib MMAX    0.06538948645388763
+    Attrib CACH    0.1678854995378468
+    Attrib CHMIN    0.14732106040578014
+    Attrib CHMAX    0.25676296625763656
+    Attrib PRP    0.18740654460254777
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.3597887090789661
+    Attrib MYCT    0.32138642874853884
+    Attrib MMIN    0.2523685774780267
+    Attrib MMAX    0.0887456825579437
+    Attrib CACH    0.269457237634216
+    Attrib CHMIN    0.21699249683334065
+    Attrib CHMAX    0.0021523599286685773
+    Attrib PRP    0.19477073899643293
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.473322518846892
+    Attrib MYCT    0.3379860362644321
+    Attrib MMIN    0.40496431898192287
+    Attrib MMAX    0.41502785867832376
+    Attrib CACH    0.3774861178787032
+    Attrib CHMIN    0.1883767192184372
+    Attrib CHMAX    -0.08125604789820454
+    Attrib PRP    0.2382925981845109
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    1.1082366627817606
+    Attrib MYCT    0.2952710294856912
+    Attrib MMIN    -0.6684515292123865
+    Attrib MMAX    -1.7383995409486952
+    Attrib CACH    -0.5415823869128081
+    Attrib CHMIN    0.02065608565643843
+    Attrib CHMAX    -0.1722588328512735
+    Attrib PRP    0.20627091842442294
+Class
+    Input
+    Node 0
+
+
+Time taken to build model: 1.62 seconds
+
+=== Predictions on test set ===
+
+inst#,actual,predicted,error
+1,15,11.325,-3.675
+2,20,17.023,-2.977
+3,350,360.496,10.496
+4,253,244.648,-8.352
+5,42,41.317,-0.683
+6,41,39.565,-1.435
+7,75,71.053,-3.947
+8,138,140.077,2.077
+9,44,43.32,-0.68
+10,99,98.71,-0.29
+11,72,70.751,-1.249
+12,25,23.171,-1.829
+13,28,26.625,-1.375
+14,18,27.414,9.414
+15,120,122.034,2.034
+16,42,41.896,-0.104
+17,26,25.914,-0.086
+18,23,20.521,-2.479
+19,978,898.546,-79.454
+20,25,26.942,1.942
+21,21,18.924,-2.076
+22,227,230.774,3.774
+23,46,45.692,-0.308
+24,190,178.309,-11.691
+25,34,30.901,-3.099
+26,181,188.093,7.093
+27,749,843.806,94.806
+28,82,80.131,-1.869
+29,24,21.236,-2.764
+30,253,244.666,-8.334
+31,24,22.106,-1.894
+32,41,41.124,0.124
+33,25,24.585,-0.415
+34,33,32.919,-0.081
+35,74,73.54,-0.46
+36,34,30.821,-3.179
+37,76,74.147,-1.853
+38,86,85.241,-0.759
+39,171,175.629,4.629
+40,57,55.006,-1.994
+41,24,21.124,-2.876
+42,23,22.849,-0.151
+43,22,22.875,0.875
+44,126,127.051,1.051
+45,603,649.638,46.638
+46,88,85.464,-2.536
+47,74,73.432,-0.568
+48,919,842.048,-76.952
+49,28,27.594,-0.406
+50,360,366.895,6.895
+51,181,188.076,7.076
+52,157,149.223,-7.777
+53,34,30.769,-3.231
+54,29,27.964,-1.036
+55,266,274.047,8.047
+56,82,83.756,1.756
+57,128,127.991,-0.009
+58,31,31.746,0.746
+59,381,373.521,-7.479
+60,136,141.208,5.208
+61,426,458.144,32.144
+62,32,30.953,-1.047
+63,113,106.085,-6.915
+64,28,30.395,2.395
+65,52,53.211,1.211
+66,64,63.167,-0.833
+67,40,41.389,1.389
+68,46,45.88,-0.12
+69,29,30.411,1.411
+70,220,212.842,-7.158
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.9952
+Mean absolute error                      7.4531
+Root mean squared error                 19.107
+Relative absolute error                  6.9701 %
+Root relative squared error              9.4309 %
+Total Number of Instances               70

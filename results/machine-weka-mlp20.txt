@@ -1,0 +1,334 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 5000 -V 0 -S 0 -E 20 -H 20
+Relation:     machine-train
+Instances:    139
+Attributes:   8
+              MYCT
+              MMIN
+              MMAX
+              CACH
+              CHMIN
+              CHMAX
+              PRP
+              ERP
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Linear Node 0
+    Inputs    Weights
+    Threshold    -0.9956054048441031
+    Node 1    -0.06909269957889805
+    Node 2    -0.07029174578219312
+    Node 3    0.051836354204422896
+    Node 4    1.1726825358733441
+    Node 5    0.41225228382734597
+    Node 6    -0.11821858383800782
+    Node 7    0.32866554222580446
+    Node 8    0.15992929496499686
+    Node 9    -0.07533080138966727
+    Node 10    0.056004163877465436
+    Node 11    0.23673103470375034
+    Node 12    -0.340348364631925
+    Node 13    0.12959479153118808
+    Node 14    -0.002300567729025501
+    Node 15    -0.02304929503551508
+    Node 16    -0.06765534260529893
+    Node 17    -0.03363447384903286
+    Node 18    0.8875159820732959
+    Node 19    0.09934968617383876
+    Node 20    0.012980341931035715
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.42820125316053964
+    Attrib MYCT    0.33822774530358596
+    Attrib MMIN    0.14552153785998762
+    Attrib MMAX    0.18571840961068653
+    Attrib CACH    0.11788972161259241
+    Attrib CHMIN    0.15380491004636102
+    Attrib CHMAX    0.20780676957546504
+    Attrib PRP    0.15934453887107636
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.4425525882813804
+    Attrib MYCT    0.32667386379582547
+    Attrib MMIN    0.16040376440488588
+    Attrib MMAX    0.13993068673728115
+    Attrib CACH    0.22725033198712566
+    Attrib CHMIN    0.255490867723619
+    Attrib CHMAX    0.2977289303691521
+    Attrib PRP    0.17579765282160434
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.40946513999957024
+    Attrib MYCT    0.3729552495188352
+    Attrib MMIN    0.1930202263635312
+    Attrib MMAX    0.18459114053486508
+    Attrib CACH    0.22642413325332286
+    Attrib CHMIN    0.20173772847929208
+    Attrib CHMAX    0.17911036198052413
+    Attrib PRP    0.2575425188882824
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.0651755738125985
+    Attrib MYCT    -0.43601925541133574
+    Attrib MMIN    0.593274949942146
+    Attrib MMAX    1.4854987701858682
+    Attrib CACH    0.36476512226741725
+    Attrib CHMIN    -0.012041567171518528
+    Attrib CHMAX    0.2168835476085182
+    Attrib PRP    -0.23161806352288564
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.6069879603719367
+    Attrib MYCT    0.5396902231821344
+    Attrib MMIN    0.4704326178204845
+    Attrib MMAX    0.6529704746496222
+    Attrib CACH    0.3534642913311371
+    Attrib CHMIN    0.15587216578766805
+    Attrib CHMAX    -0.02112429056315566
+    Attrib PRP    0.22496371036426907
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.4106426943976648
+    Attrib MYCT    0.3198741669423574
+    Attrib MMIN    0.10641507884574085
+    Attrib MMAX    0.1923459608808285
+    Attrib CACH    0.1676745508089898
+    Attrib CHMIN    0.15214147090893548
+    Attrib CHMAX    0.3276940517747178
+    Attrib PRP    0.23544813492878044
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.4784018046396405
+    Attrib MYCT    0.4683689186678647
+    Attrib MMIN    0.3631803066789203
+    Attrib MMAX    0.49439651718530375
+    Attrib CACH    0.3588750587608654
+    Attrib CHMIN    0.1812877198487828
+    Attrib CHMAX    -0.07969126718017339
+    Attrib PRP    0.28314227019403754
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.36559225841513077
+    Attrib MYCT    0.37417502176040146
+    Attrib MMIN    0.3178244769992244
+    Attrib MMAX    0.19254229515815505
+    Attrib CACH    0.27763526250911674
+    Attrib CHMIN    0.1791266078212712
+    Attrib CHMAX    0.06784551723128297
+    Attrib PRP    0.273303453395824
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.4294569173818978
+    Attrib MYCT    0.322315362956642
+    Attrib MMIN    0.11003389512887819
+    Attrib MMAX    0.16493854193113877
+    Attrib CACH    0.1893117327128729
+    Attrib CHMIN    0.13371529393296513
+    Attrib CHMAX    0.27400176668889237
+    Attrib PRP    0.23083230860016402
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.3944850011906349
+    Attrib MYCT    0.3455747883854848
+    Attrib MMIN    0.24852987563850157
+    Attrib MMAX    0.18630991580044673
+    Attrib CACH    0.2050885546896696
+    Attrib CHMIN    0.23814086523670328
+    Attrib CHMAX    0.18451466277129433
+    Attrib PRP    0.24166611964129756
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -0.4729796815653618
+    Attrib MYCT    0.31673224211522916
+    Attrib MMIN    0.37082080412065255
+    Attrib MMAX    0.44204839850783134
+    Attrib CACH    0.3118116775398573
+    Attrib CHMIN    0.1806817090421567
+    Attrib CHMAX    -0.0042854452873688186
+    Attrib PRP    0.23647507497945952
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.36507967355665133
+    Attrib MYCT    0.2742185808028099
+    Attrib MMIN    -0.010262752935063192
+    Attrib MMAX    0.2520368254470211
+    Attrib CACH    -0.17194712896882633
+    Attrib CHMIN    -0.2119799522428981
+    Attrib CHMAX    -0.017048401651116624
+    Attrib PRP    -0.08521716820272347
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.40921361972792014
+    Attrib MYCT    0.3682885652681377
+    Attrib MMIN    0.32037409522041477
+    Attrib MMAX    0.207126601382817
+    Attrib CACH    0.24997112893765877
+    Attrib CHMIN    0.17094095432930176
+    Attrib CHMAX    0.11245814081868488
+    Attrib PRP    0.2515904654377132
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.4380660775953739
+    Attrib MYCT    0.3195044860153029
+    Attrib MMIN    0.2073058193364198
+    Attrib MMAX    0.10951041652813194
+    Attrib CACH    0.19819950870460035
+    Attrib CHMIN    0.18299581290661462
+    Attrib CHMAX    0.2628316943566261
+    Attrib PRP    0.24784060140407013
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.40437259544680415
+    Attrib MYCT    0.30232232242198886
+    Attrib MMIN    0.22505631198275558
+    Attrib MMAX    0.09079088458588104
+    Attrib CACH    0.250792767405275
+    Attrib CHMIN    0.25428298569747854
+    Attrib CHMAX    0.27778220447299895
+    Attrib PRP    0.19618578620117144
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    -0.45424167489274875
+    Attrib MYCT    0.3281275610677782
+    Attrib MMIN    0.10399000195994787
+    Attrib MMAX    0.2030812716133745
+    Attrib CACH    0.11821231744277244
+    Attrib CHMIN    0.18041419125166122
+    Attrib CHMAX    0.2140330591817326
+    Attrib PRP    0.20360085648650958
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.3868210889782571
+    Attrib MYCT    0.34595256569545313
+    Attrib MMIN    0.1498284420841861
+    Attrib MMAX    0.16656697384995653
+    Attrib CACH    0.1574240843149461
+    Attrib CHMIN    0.15261814473420954
+    Attrib CHMAX    0.23566774914015798
+    Attrib PRP    0.23863335869433913
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    -1.0076954489190704
+    Attrib MYCT    0.24723249742657208
+    Attrib MMIN    0.5741780245099868
+    Attrib MMAX    1.216232672334224
+    Attrib CACH    0.6857738257684073
+    Attrib CHMIN    0.12018238670610899
+    Attrib CHMAX    0.012308473263338383
+    Attrib PRP    0.18406196484678847
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.41121486619259856
+    Attrib MYCT    0.306371078471729
+    Attrib MMIN    0.32023487091348524
+    Attrib MMAX    0.29546630153672704
+    Attrib CACH    0.24672772971282647
+    Attrib CHMIN    0.17097059749037585
+    Attrib CHMAX    0.15125682062022971
+    Attrib PRP    0.25001809395423086
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    -0.38670274369371904
+    Attrib MYCT    0.33433081547595545
+    Attrib MMIN    0.16663642237912502
+    Attrib MMAX    0.13000125196145332
+    Attrib CACH    0.2905714198104593
+    Attrib CHMIN    0.23048868837412204
+    Attrib CHMAX    0.21332027343518215
+    Attrib PRP    0.21535888155329583
+Class
+    Input
+    Node 0
+
+
+Time taken to build model: 3 seconds
+
+=== Predictions on test set ===
+
+inst#,actual,predicted,error
+1,15,11.787,-3.213
+2,20,17.288,-2.712
+3,350,359.669,9.669
+4,253,244.215,-8.785
+5,42,41.407,-0.593
+6,41,39.605,-1.395
+7,75,72.243,-2.757
+8,138,140.648,2.648
+9,44,43.368,-0.632
+10,99,99.233,0.233
+11,72,70.959,-1.041
+12,25,23.334,-1.666
+13,28,26.798,-1.202
+14,18,27.785,9.785
+15,120,122.637,2.637
+16,42,41.843,-0.157
+17,26,25.804,-0.196
+18,23,20.654,-2.346
+19,978,874.132,-103.868
+20,25,26.638,1.638
+21,21,19.297,-1.703
+22,227,230.877,3.877
+23,46,45.711,-0.289
+24,190,179.256,-10.744
+25,34,30.903,-3.097
+26,181,188.495,7.495
+27,749,815.643,66.643
+28,82,80.534,-1.466
+29,24,21.376,-2.624
+30,253,244.674,-8.326
+31,24,22.214,-1.786
+32,41,41.087,0.087
+33,25,24.432,-0.568
+34,33,32.998,-0.002
+35,74,73.633,-0.367
+36,34,30.76,-3.24
+37,76,74.322,-1.678
+38,86,85.558,-0.442
+39,171,176.494,5.494
+40,57,55.966,-1.034
+41,24,21.263,-2.737
+42,23,22.985,-0.015
+43,22,22.776,0.776
+44,126,127.741,1.741
+45,603,645.149,42.149
+46,88,85.778,-2.222
+47,74,73.524,-0.476
+48,919,809.051,-109.949
+49,28,28.138,0.138
+50,360,366.671,6.671
+51,181,188.197,7.197
+52,157,151.532,-5.468
+53,34,30.697,-3.303
+54,29,28.197,-0.803
+55,266,272.906,6.906
+56,82,83.788,1.788
+57,128,128.911,0.911
+58,31,31.607,0.607
+59,381,371.794,-9.206
+60,136,142.008,6.008
+61,426,456.669,30.669
+62,32,31.216,-0.784
+63,113,107.693,-5.307
+64,28,30.543,2.543
+65,52,52.854,0.854
+66,64,63.374,-0.626
+67,40,41.345,1.345
+68,46,46.025,0.025
+69,29,30.108,1.108
+70,220,213.662,-6.338
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correlation coefficient                  0.9945
+Mean absolute error                      7.6686
+Root mean squared error                 21.0748
+Relative absolute error                  7.1716 %
+Root relative squared error             10.4022 %
+Total Number of Instances               70
