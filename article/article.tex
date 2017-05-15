@@ -21,7 +21,7 @@
 %-----------------------------
 
 	\begin{abstract}
-		\noindent [TODO ]
+		\noindent En este documento se realiza una breve descripción acerca de la Red Neuronal Artificial \emph{Percerptrón Multicapa}. Además, se han realizado experimentos sobre dos conjuntos de datos, el primero de ellos con valor de destino de carácter numérico (regresión) y el segundo de carácter categórico (clasificación). En estos experimentos se ha comparado el \emph{Percerptrón Multicapa} con otras estrategias como la \emph{Regresión Lineal}, \emph{Regresión Logística} y el \emph{ADALINE}. 
 	\end{abstract}
 
 %-----------------------------
@@ -32,20 +32,24 @@
 	\section{Introducción}
 	\label{sec:introducción}
 
-		\paragraph{}
-		[TODO ]
-
 		\subsection{Perceptrón Multicapa}
 		\label{sec:multilayer-perceptron}
 
 			\paragraph{}
-			[TODO ]
+			El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, esto le permite resolver problemas que no son linealmente separables, lo cual es la principal limitación del perceptrón simple. El perceptrón multicapa puede ser totalmente o localmente conectado. En el primer caso cada salida de una neurona de la capa \say{i} forma parte de la entrada de todas las neuronas de la capa \say{i+1}. \cite{wiki:Multilayer_perceptron}
+
+			\paragraph{}
+			El perceptrón multicapa está formado por tres capas principales (entrada, oculta y salida). Mientras que las capas de entrada y salida únicamente están formadas por una única capa, constituyendose la de entrada por una neurona por atributo del conjunto de datos y la de salida por una neurona por clase de destino. Por contra, la capa oculta puede estar formada por más de una capa.
+
+			\paragraph{}
+			Las funciones de activación de las neuronas de las capas de entrada y salida son de carácter lineal mientras que las de las neuronas de las capas ocultas son funciones no lineales como la tangente hiperbólica o la función logística cuyos dominios de aplicación están acotados en los intervalos $(-1,1)$ y $(0,1)$ respectivamente. Dichas funciones deben ser derivables puesto que el proceso de aprendizaje se basa en la retropropagación o regla delta generalizada (una especialización del método del gradiente descendiente, que ajusta los pesos de cada neurona de forma iterativa).
+
 
 	\section{Experimentos sobre Computer Hardware Dataset}
 	\label{sec:e1}
 
 		\paragraph{}
-		En esta sección se describe el experimento realizado sobre el conjunto de datos \textbf{Computer Hardware} \cite{dataset:computer_hardware} con distintos algoritmos de aprendizaje que se describen a continuación. El conjunto de datos está formado por \emph{7 atributos} normalizados junto con el valor de la clase. El conjunto utilizado para entrenamiento está formado por \emph{139 instancias} y \emph{70 instancias} para test. Puesto que el algoritmo de aprendizaje realiza una regresión sobre los datos, para calcular la tasa de fallos se ha utilizado como cota máxima de medida un \textbf{error relativo del $10\%$} sobre el valor esperado. Los parámetros utilizados para el los algoritmos de aprendizaje iterativos han sido un ratio de aprendizaje $\alpha = 0.3$ y $5000$ épocas.
+		En esta sección se describe el experimento realizado sobre el conjunto de datos \textbf{Computer Hardware} \cite{dataset:computer-hardware} con distintos algoritmos de aprendizaje que se describen a continuación. El conjunto de datos está formado por \emph{7 atributos} normalizados junto con el valor de la clase. El conjunto utilizado para entrenamiento está formado por \emph{139 instancias} y \emph{70 instancias} para test. Puesto que el algoritmo de aprendizaje realiza una regresión sobre los datos, para calcular la tasa de fallos se ha utilizado como cota máxima de medida un \textbf{error relativo del $10\%$} sobre el valor esperado. Los parámetros utilizados para el los algoritmos de aprendizaje iterativos han sido un ratio de aprendizaje $\alpha = 0.3$ y $5000$ épocas.
 
 		\paragraph{}
 		Los algoritmos utilizados para el aprendizaje han sido \emph{Regresión Lineal} y \emph{ADALINE} utilizando las implementaciones de los trabajos \cite{garciparedes:machine-learning-regression} y \cite{garciparedes:machine-learning-single-layer-neural-networks} respectivamente. Estos resultados se han comparado con los obtenidos a partir del algoritmo de aprendizaje basado en Redes Neuronales \emph{Perceptrón Multicapa} implementado en la biblioteca \emph{WEKA}\cite{tool:weka}. Se han probado distintos valores para el cardinal de la capa oculta de neuronas. Los valores utilizados han sido 10, 15, 20 y 30 neuronas.
