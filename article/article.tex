@@ -45,7 +45,13 @@
 	\label{sec:e1}
 
 		\paragraph{}
-		[TODO ]
+		En esta sección se describe el experimento realizado sobre el conjunto de datos \textbf{Computer Hardware} \cite{dataset:computer_hardware} con distintos algoritmos de aprendizaje que se describen a continuación. El conjunto de datos está formado por \emph{7 atributos} normalizados junto con el valor de la clase. El conjunto utilizado para entrenamiento está formado por \emph{139 instancias} y \emph{70 instancias} para test. Puesto que el algoritmo de aprendizaje realiza una regresión sobre los datos, para calcular la tasa de fallos se ha utilizado como cota máxima de medida un \textbf{error relativo del $10\%$} sobre el valor esperado. Los parámetros utilizados para el los algoritmos de aprendizaje iterativos han sido un ratio de aprendizaje $\alpha = 0.3$ y $5000$ épocas.
+
+		\paragraph{}
+		Los algoritmos utilizados para el aprendizaje han sido \emph{Regresión Lineal} y \emph{ADALINE} utilizando las implementaciones de los trabajos \cite{garciparedes:machine-learning-regression} y \cite{garciparedes:machine-learning-single-layer-neural-networks} respectivamente. Estos resultados se han comparado con los obtenidos a partir del algoritmo de aprendizaje basado en Redes Neuronales \emph{Perceptrón Multicapa} implementado en la biblioteca \emph{WEKA}\cite{tool:weka}. Se han probado distintos valores para el cardinal de la capa oculta de neuronas. Los valores utilizados han sido 10, 15, 20 y 30 neuronas.
+
+		\paragraph{}
+		La métodología experimental que se ha seguido ha sido un \textbf{HoldOut} con particionamiento de los datos de manera que $\frac{2}{3}$ son utilizados en la fase de entrenamiento y $\frac{1}{3}$ en la de test. Los resultados obtenidos tras dicha experimentación se recogen en la tabla \ref{table:e1_error}.
 
 		\begin{table}[h]
 			\centering
@@ -54,20 +60,28 @@
 				\hline
 					& \multicolumn{6}{ c | }{Computer Hardware Dataset} \\ \hline
 					&\emph{R. Lineal} & \emph{ADALINE} & \emph{MLP 10} & \emph{MLP 15} & \emph{MLP 20}  & \emph{MLP 30}\\ \cline{2-7}
-				Tasa Error HoldOut	& $67.143\%$	 & $78.571\%$ & $10.0\%$ & $14.285\%$	& $11.428\%$ & $5.714\%$ \\
+				Tasa Error HoldOut	& $67.143\%$ & $78.571\%$ & $10.0\%$ & $14.285\%$	& $11.428\%$ & $5.714\%$ \\
 				\hline
 			\end{tabu}
-			\caption{[TODO ]}
-			\label{table:e1}
+			\caption{Tasas de error obtenidas en los experimentos sobre el conjunto de datos Computer Hardware}
+			\label{table:e1_error}
 		\end{table}
+
+		\paragraph{}
+		Las tasas de error obtenidas tras los experimentos muestran una tendencia a destacar. Los resultados obtenidos en los experimentos en los que el algoritmo de aprendizaje usado es el \emph{Perceptrón Multicapa} presentan tasas de error muy inferiores a las de la \emph{Regresión Lineal} y el \emph{ADALINE}. Una de las razones por las cuales dichas estrategias obtienen una tasa de error tan alta puede ser debida a que los resultados no sean linealmente separables, es decir, no pueden ser dividades mediante hiperplanos. Puesto que el \emph{Perceptrón Multicapa} utiliza funciones de activación no lineales en la capa oculta, lo cual añade la características de que la red se adapte a resultados no lineales. En cuanto al número de neuronas en la capa oculta, los mejores resultados se escogen con 30 neuronas.
+
 
 	\section{Experimentos sobre Wine Dataset}
 	\label{sec:e2}
 
 		\paragraph{}
-		[TODO ]
-		[2 muestras mal clasificadas en logistic]
-		[3 muestras mal clasificadas en mlp]
+		En esta sección se realiza un experimento para estudiar la tasa de error obtenida mediante el algoritmo de aprendizaje automático basado en redes neuronales \emph{Perceptrón Multicapa} para después compararla con los resultados obtenidos mediante la estrategia de \emph{Regresión Logística}. Dicha labor es posible cuando la clase de destino es numérica pero se puede discretizar. (En este caso es de carácter entero y acotada por lo que su discretización es trivial). Puesto que no es de tipo binario es necesario seguir la estrategía de clasificación por pares tal y como se ha descrito anteriormente.
+
+		\paragraph{}
+		Los algoritmos utilizados para el aprendizaje han sido \emph{Regresión Logística} utilizando las implementación de los trabajos \cite{garciparedes:machine-learning-regression}. Estos resultados se han comparado con los obtenidos a partir del algoritmo de aprendizaje basado en Redes Neuronales \emph{Perceptrón Multicapa} implementado en la biblioteca \emph{WEKA}\cite{tool:weka}. Se han probado distintos valores para el cardinal de la capa oculta de neuronas. Los valores utilizados han sido 10, 15, 20 y 30 neuronas.
+
+		\paragraph{}
+		El conjunto de datos que se ha utilizado para dichos experimentos es \textbf{Wine Data Set} \cite{dataset:wine}, formado por \textbf{178 instancias}. Dichas instancias contienen \textbf{12 atributos} de carácter númerico. La \textbf{clase de destino es de carácter numérico}. Sin embargo, en este caso es de tipo entero, por lo que puede ser vista como una variable categórica. En cuanto a la metodología experimental, se ha seguido una extrategia de \textbf{HoldOut} con particionamiento de los datos de manera que $\frac{2}{3}$ son utilizados en la fase de entrenamiento y $\frac{1}{3}$ en la de test. Los resultados de dichos experimentos se muestran en la tabla \ref{table:e2}.
 
 		\begin{table}[h]
 			\centering
@@ -79,9 +93,12 @@
 				Tasa Error HoldOut	& $3.389\%$	 & $5.084\%$ & $5.084\%$ & $5.084\%$	& $5.084\%$ \\
 				\hline
 			\end{tabu}
-			\caption{[TODO ]}
+			\caption{Tasas de error obtenidas en los experimentos sobre el conjunto de datos Wine}
 			\label{table:e2}
 		\end{table}
+
+		\paragraph{}
+		Las tasas de error en este caso presentan un suceso curioso puesto que para todos los distintos tamaños de la capa oculta del \emph{Perceptrón Multicapa} el resultado ha sido el mismo (por lo cual en una implementación real sería conveniente utilizar la de 10 neuronas). En este caso los resultado obtenidos a partir de la \emph{Regresión Logística}. Una de las causas de este suceso puede ser que las clases de destino si que presenten la característica de ser linealmente separables.
 
 %-----------------------------
 %	Bibliographic references
